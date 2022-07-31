@@ -1,0 +1,22 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aworefa/portfolio.git"
+  },
+  "author": "aworefa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aworefa/portfolio/issues"
+  },
+  "homepage": "https://github.com/Aworefa/portfolio#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.7"
+  }
+}
