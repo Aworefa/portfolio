@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aworefa Tobi Webpage</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="../css/all.css">
+</head>
+
+<body class="bg-slate-900 px-5 md:px-0 ">
+    <!-- the nav bar section  -->
+    <nav class="sticky top-0 z-[1] bg-slate-900 pb-[2px] md:pb-0">
+        <div class="container mx-auto my-4 md:my-8 flex justify-between ">
+            <div>
+                <!-- logo of the webpage -->
+                <h1 class="font-bold text-teal-400 text-2xl hover:text-slate-400 font-[curvise]">AT</h1>
+            </div>
+            <div class="hidden md:flex md:justifty-evenly space-x-10 font-mono font-semibold text-lg">
+                <!-- nav bar -->
+                <a href="#home" class="text-slate-400 hover:text-teal-400 hover:border-y hover:border-teal-400">Home</a>
+                <a href="#about"
+                    class="text-slate-400  hover:text-teal-400 hover:border-y hover:border-teal-400 ">About</a>
+                <a href="#skills"
+                    class="text-slate-400  hover:text-teal-400 hover:border-y hover:border-teal-400">Skills</a>
+                <a href="#service"
+                    class="text-slate-400  hover:text-teal-400 hover:border-y hover:border-teal-400">Service</a>
+                <a href="#contact"
+                    class="text-slate-400  hover:text-teal-400 hover:border-y hover:border-teal-400">Contact</a>
+            </div>
+            <button id="menu-btn" class="block hamburger mt-2 md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-buttom"></span>
+            </button>
+
+        </div>
+        <div class="md:hidden">
+            <div id="menu"
+                class=" font-mono font-light hidden absolute flex-col items-center self-end  py-3 -mt-2 space-y-2 bg-slate-900 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="#home" class="text-slate-400  hover:text-teal-400 hover:border-y hover:border-teal-400"
+                    id="show">Home</a>
+                <a href="#about" class="text-slate-400  hover:text-teal-400 hover:border-y hover:border-teal-400"
+                    id="show">About</a>
+                <a href="#skills" class="text-slate-400  hover:text-teal-400 hover:border-y hover:border-teal-400"
+                    id="show">Skills</a>
+                <a href="#service" class="text-slate-400  hover:text-teal-400 hover:border-y hover:border-teal-400"
+                    id="show">Service</a>
+                <a href="#contact" class="text-slate-400  hover:text-teal-400 hover:border-y hover:border-teal-400"
+                    id="show">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navigation bar for pc and mobile -->
+    <main id="home" class="container mx-auto my-20">
+        <!-- the main body of my web page -->
+        <div>
+            <p class="text-teal-400 font-semibold text-lg font-mono mb-7">Hi, my name is</p>
+        </div>
+        <div>
+            <p class="font-extrabold text-3xl md:text-7xl text-slate-100 font-mono mb-5">AWOREFA TOBI</p>
+        </div>
+        <div>
+            <p class="font-extrabold text-2xl md:text-5xl text-slate-400 font-mono mb-5">I build things for the web.</p>
+        </div>
+        <div>
+            <p class="text-slate-300 text-[17px] w-[400px] font-mono md:w-[500px] mb-10">I am a frontend developer who
+                is passionate about building reponsive and user-friendly websites. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Sequi, voluptates?</p>
+        </div>
+        <div>
+            <a href="../images/CV.pdf" download
+                class="border text-base font-mono font-extrabold p-3 md:text-xl text-teal-400 border-teal-400 md:p-5 hover:bg-slate-100/20 ">
+                DOWNLOAD RESUME</a>
+        </div>
+    </main>
+    <!-- about me section -->
+    <section id="about" class="container mx-auto pt-20 md:pt-0 md:mt-40">
+        <div class="flex flex-col md:flex-row space-x-16 space-y-10">
+            <!-- text zone -->
+            <div class="flex flex-col">
+                <div class="flex flex-row space-x-6 mb-7">
+                    <p class="text-slate-400 font-mono text-xl font-extrabold md:text-xl lg:text-3xl">About Me</p>
+                    <div class="h-[1px] w-[200px] lg:w-[400px] md:w-[300px] self-center bg-slate-600"></div>
+                </div>
+                <p class="text-slate-300 w-[350px] font-mono md:w-[500px] text-lg">Hello! My name is Tobi and I adore
+                    producing content for the internet. As a frontend developer, I'm passionate in developing
+                    applications and websites that are responsive. I also enjoy studying and using new online and mobile
+                    application development technologies. I am also really passionate about instructing those that are
+                    interested in web development.I'm looking for a great job opportunity and mentorship that promotes
+                    team work and also enable an environment where developers can learn and work with new technologies
+                </p>
+            </div>
+            <div>
+                <img src="../images/seeto.jpg" alt="my picture"
+                    class="w-[300px] -ml-8 md:-ml-8 mt-8  grayscale hover:grayscale-0">
+            </div>
+        </div>
+    </section>
+    <!-- skills section  -->
+    <section id="skills" class="container mx-auto pt-20 md:pt-0 md:mt-40">
+        <div class="flex flex-col  ">
+            <div class="items-center flex flex-col mb-10">
+                <h2 class="text-slate-400 text-3xl font-mono font-bold">Skills</h2>
+                <div class="h-[1px] container bg-slate-600"></div>
+            </div>
+            <div class="flex flex-col md:flex-row space-y-10 md:space-x-10">
+                <p class="text-slate-300 font-mono  text-lg">I can work as a technical director and team manager. I am a
+                    front-end developer with extensive knowledge of HTML, CSS and JavaScript. I am also generally
+                    skilled in technologies such as tailwind. I have strong problem-solving abilities and am relentless
+                    when it comes to getting to the root of a problem and ultimately solving it. I can handle pressure
+                    that is under some specific stressful conditions. I always manage to retain my critical thinking
+                    capacity. I also have good understanding of git </p>
+                <div id="bars" class="flex fle-col self-center">
+                    <ul>
+                        <li class="px-32 md:px-36 rounded-full  border text-white border-teal-400 text-center mb-8"
+                            id="view">Html</li>
+                        <li class="md:px-36 rounded-full  border text-white border-teal-400 text-center my-8"
+                            id="view1">Css</li>
+                        <li class="md:px-36 rounded-full  border text-white border-teal-400 text-center my-8"
+                            id="view2">Tailwindcss</li>
+                        <li class="md:px-36 rounded-full  border text-white border-teal-400 text-center my-8 "
+                            id="view3">JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- service section  -->
+    <section id="service" class="container mx-auto pt-20 md:pt-0 md:mt-40 mb-40">
+        <div class="flex flex-col  ">
+            <div class="flex flex-row-reverse space-x-6 mb-7">
+                <p class="text-slate-400 font-mono text-2xl font-extrabold ml-3 md:text-3xl">Services</p>
+                <div class="h-[1px] w-[200px] md:w-[400px]  self-center bg-slate-600"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-x-5 gap-y-8 ">
+                <div class="border border-teal-400 h-[350px] py-5 hover:shadow-teal-300 hover:shadow-xl hover:scale-105"
+                    id="deve">
+                    <h1 class="text-2xl text-center text-slate-400 font-mono font-bold">Frontend Development</h1>
+                    <img src="../images/coding.png" alt="" class="w-28 mx-auto">
+                    <h2 class="text-center font-mono text-slate-300 pt-6 px-4" id="newword"></h2>
+                </div>
+                <div class="border border-teal-400 h-[350px] py-5 hover:shadow-teal-300 hover:shadow-xl hover:scale-105"
+                    id="devetwo">
+                    <h1 class="text-2xl text-center text-slate-400 font-mono font-bold">Mobile Development</h1>
+                    <img src="../images/development.png" class="w-28 mx-auto" alt="">
+                    <h2 class="text-center font-mono text-slate-300 pt-6 px-4" id="newwordtwo"></h2>
+                </div>
+                <div class="border border-teal-400 h-[350px] py-5 hover:shadow-teal-300 hover:shadow-xl hover:scale-105"
+                    id="devethree">
+                    <h1 class="text-2xl text-center text-slate-400 font-mono font-bold">Coming Soon..</h1>
+                    <img src="../images/soon.png" class="w-28 mx-auto" alt="">
+                    <h2 class="text-center font-mono text-slate-300 pt-6 px-4" id="newwordthree"><span
+                            class="viewtext"></span></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- the footer and contact section  -->
+    <footer id="contact ">
+        <div class="flex flex-col container mx-auto">
+            <p class="text-center text-slate-400 text-3xl font-mono font-bold">Contact</p>
+            <div class="h-[1px] container bg-slate-600 mb-10"></div>
+            <div class=" flex flex-row justify-center space-x-10">
+                <a href="https://www.linkedin.com/in/aworefa-tobi-6b473223a" id="linkedin"><i class="fa-brands fa-linkedin-in text-teal-400 hover:text-slate-300"></i></a>
+                <a href="tel:+2347032771628" id="whatsapp"><i class="fa-brands fa-whatsapp text-teal-400 hover:text-slate-300"></i></a>
+                <a href="https://www.twitter.com/aworefae" id="twitter"><i class="fa-brands fa-twitter text-teal-400 hover:text-slate-300"></i></a>
+                <a href="https://github.com/Aworefa" id="github"><i class="fa-brands fa-github text-teal-400 hover:text-slate-300"></i></a>
+                <a href="mailto:aworefatobi1999@gmail.com" id="gmail"><i class="fa-solid fa-at text-teal-400 hover:text-slate-300"></i></a>
+            </div>
+            <div></div>
+        </div>
+    </footer>
+
+
+    <!-- <p class="container mx-auto bg-blue-500 font-semibold">tobi</p> -->
+    <script src="script.js"></script>
+</body>
+
+</html>

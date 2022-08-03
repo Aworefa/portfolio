@@ -2,3 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-buttom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: rgb(11, 189, 189);
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+}
+
+.hamburger-buttom {
+    transform: translateY(14px);
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-buttom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+#view {
+    background: linear-gradient(to right,  rgb(45, 212, 191) 0%,
+            rgb(45, 212, 191) 85%,
+            rgba(30, 252, 222, 0) 85%,
+            rgba(30, 252, 222, 0) 100%);
+}
+#view1 {
+    background: linear-gradient(to right,  rgb(45, 212, 191) 0%,
+            rgb(45, 212, 191) 80%,
+            rgba(30, 252, 222, 0) 80%,
+            rgba(30, 252, 222, 0) 100%);
+}
+#view2 {
+    background: linear-gradient(to right,  rgb(45, 212, 191) 0%,
+            rgb(45, 212, 191) 75%,
+            rgba(30, 252, 222, 0) 75%,
+            rgba(30, 252, 222, 0) 100%);
+}
+#view3 {
+    background: linear-gradient(to right,  rgb(45, 212, 191) 0%,
+            rgb(45, 212, 191) 65%,
+            rgba(30, 252, 222, 0) 65%,
+            rgba(30, 252, 222, 0) 100%);
+}
+/* .viewtext {
+	-webkit-animation: text-focus-in 230ms linear 2s 5 alternate both;
+	        animation: text-focus-in 230ms linear 2s 5 alternate both;
+} */
