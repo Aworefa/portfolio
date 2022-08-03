@@ -631,11 +631,6 @@ video {
   margin-bottom: 2rem;
 }
 
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -660,32 +655,20 @@ video {
   margin-left: -2rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
-.ml-3 {
-  margin-left: 0.75rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .mb-40 {
   margin-bottom: 10rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
 }
 
 .block {
@@ -712,16 +695,12 @@ video {
   height: 350px;
 }
 
-.w-\[400px\] {
-  width: 400px;
+.w-\[350px\] {
+  width: 350px;
 }
 
 .w-\[200px\] {
   width: 200px;
-}
-
-.w-\[350px\] {
-  width: 350px;
 }
 
 .w-\[300px\] {
@@ -854,14 +833,24 @@ video {
   padding-right: 8rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pb-\[2px\] {
@@ -872,16 +861,8 @@ video {
   padding-top: 5rem;
 }
 
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
 .pt-6 {
   padding-top: 1.5rem;
-}
-
-.pb-20 {
-  padding-bottom: 5rem;
 }
 
 .text-center {
@@ -1090,6 +1071,11 @@ video {
   color: rgb(203 213 225 / var(--tw-text-opacity));
 }
 
+.hover\:text-teal-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(94 234 212 / var(--tw-text-opacity));
+}
+
 .hover\:shadow-xl:hover {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
@@ -1127,17 +1113,8 @@ video {
     margin-bottom: 2rem;
   }
 
-  .md\:my-40 {
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-  }
-
   .md\:mt-40 {
     margin-top: 10rem;
-  }
-
-  .md\:-ml-0 {
-    margin-left: -0px;
   }
 
   .md\:-ml-8 {
@@ -1156,12 +1133,12 @@ video {
     width: 500px;
   }
 
-  .md\:w-\[400px\] {
-    width: 400px;
-  }
-
   .md\:w-\[300px\] {
     width: 300px;
+  }
+
+  .md\:w-\[400px\] {
+    width: 400px;
   }
 
   .md\:grid-cols-3 {
@@ -1219,18 +1196,9 @@ video {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
 }
 
 @media (min-width: 976px) {
-  .lg\:-ml-0 {
-    margin-left: -0px;
-  }
-
   .lg\:w-\[400px\] {
     width: 400px;
   }

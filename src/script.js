@@ -24,3 +24,19 @@ function devethree(){
     document.querySelector('#newwordthree').innerHTML = 'Coming...'
     
 }
+
+
+let thisDay = new Date()
+let day = thisDay.getDay()
+let month = thisDay.getMonth()
+var nameOfDays = ['Sunday','Monday','Tuesday','Wednesday', 'Thursday', 'Friday','Saturday','Sunday']
+var nameOfMonth = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+
+
+
+document.querySelector('#dayname').innerHTML = nameOfDays[day] + ':'
+document.querySelector('#month').innerHTML = nameOfMonth[month] + ','
+document.querySelector('#day').innerHTML = thisDay.getDate()
+document.querySelector('#year').innerHTML = new Date().getFullYear()
+// console.log(day)
+// console.log(thisDay)
