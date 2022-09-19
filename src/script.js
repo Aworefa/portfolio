@@ -40,3 +40,9 @@ document.querySelector('#day').innerHTML = thisDay.getDate()
 document.querySelector('#year').innerHTML = new Date().getFullYear()
 // console.log(day)
 // console.log(thisDay)
+
+document.querySelector('#vol').addEventListener('click', ()=>{
+    console.log('good')
+    var flow = document.querySelector('#vol').value 
+    document.querySelector('#gaugeValue').innerHTML = flow 
+})
