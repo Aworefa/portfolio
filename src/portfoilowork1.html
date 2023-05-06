@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>age calculator</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="../css/all.css">
+</head>
+
+<body class="bg-slate-100">
+    <div class="absolute bg-white p-10 top-1/4 sm:left-[35%] rounded-xl rounded-br-[100px] sm:top-1/4 left-[10%]">
+        <div class="flex flex-col justify-evenly">
+            <div class="label flex flex-row ">
+                <label id="label1" for="label1" class="text-[10px] font-bold font-mono text-gray-600 mr-[79px]" >DAY</label>
+                <label id="label2" for="label2" class="text-[10px] font-bold font-mono text-gray-600 mr-[60px]" >MONTH</label>
+                <label id="label3" for="label3" class="text-[10px] font-bold font-mono text-gray-600" >YEAR</label>
+            </div>
+            <div class="option flex flex-row space-x-3 mt-1">
+                <input type="text" id="dd" placeholder="DD" class="text-gray-600 font-bold rounded font-mono text-3xl h-10 w-20 border-2 border-gray-400 px-2">
+                <input type="text" id="mm" placeholder="MM" class="text-gray-600 rounded font-bold font-mono text-3xl h-10 w-20 border-2 border-gray-400 px-2">
+                <input type="text" id="yyyy" placeholder="YYYY"  class="text-gray-600 rounded font-bold font-mono text-3xl h-10 w-24 border-2 border-gray-400 px-2">
+            </div>
+            <div class="option flex flex-row space-x-3 mt-1 text-white text-[9px]">
+                <p id="validday">must be a valid day</p>
+                <p id="validmonth">must be a valid month</p>
+                <p id="validyear">must be in the past</p>
+            </div>
+            <div class="nextlogo flex flex-row mt-10">
+                <div class="w-[100%] border-t-2 border-gray-400 mt-[17px]"></div>
+                <button id="doas"><i class="fa-solid fa-arrow-down text-white p-[14px] w-10 h-10 rounded-full bg-purple-800"></i></button>
+            </div>
+            <!-- formation part -->
+            <div class="flex flex-col font-extrabold text-5xl ">
+                <div class="flex flex-row space-x-2">
+                    <p class="text-purple-800 ageyears">--</p>
+                    <p><em>years</em> </p>
+                </div>
+                <div  class="flex flex-row space-x-2 ">
+                    <p class="text-purple-800 agemonths">--</p>
+                    <p><em>months</em></p>
+                </div>
+                <div  class="flex flex-row space-x-2">
+                    <p class="text-purple-800 agedays">--</p>
+                    <p><em>days</em></p>
+                </div>
+            </div>
+            <button type="reset"><i class="fa-solid fa-rotate-right p-3 mt-[16px] w-10 h-10 rounded-full bg-purple-800" id="clear"></i> </button>
+        </div>
+    </div>
+
+    <script src="/src/agecal.js"></script>
+</body>
