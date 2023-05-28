@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio works</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/portfolio2.css">
+  </head>
+  <body class=" bg-blue-50 md:bg-white">
+    <section class="flex flex-col md:flex-row">
+      <!-- first section for the clicks -->
+      <section
+        class="bg-cover h-40 md:rounded-xl md:h-[100vh] md:w-[30vw]"
+        style="background-image: url(../images/bg1.png)"
+      >
+        <!-- number -->
+        <div
+          class="flex flex-row justify-evenly py-7 md:flex-col md:pt-16 md:pl-16 md:space-y-10"
+        >
+          <div class="flex flex-row space-x-5">
+            <button id="but1"
+              class="row-span-2 border-2 text-indigo-900 border-white rounded-[50%] py-2 px-4 hover:bg-indigo-500 hover:border-indigo-500"
+            >
+              1
+            </button>
+            <div class="flex flex-col">
+              <div class=" bobo md:visible md:text-indigo-50 md:font-thin">
+                <p>STEP 1</p>
+              </div>
+              <div class=" bobo md:visible md:font-bold md:text-indigo-50">
+                <p>YOUR INFO</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-row space-x-5">
+            <button id="but2"
+              class="row-span-2 border-2 text-indigo-900 border-white rounded-[50%] py-2 px-4 hover:bg-indigo-500 hover:border-indigo-500"
+            >
+              2
+            </button>
+            <div class="flex flex-col">
+              <div class="bobo md:visible md:text-indigo-50 md:font-thin">
+                <p>STEP 2</p>
+              </div>
+              <div class="bobo md:visible md:font-bold md:text-indigo-50">
+                <p>SELECT PLAN</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-row space-x-5">
+            <button id="but3"
+              class="row-span-2 border-2 text-indigo-900 border-white rounded-[50%] py-2 px-4 hover:bg-indigo-500 hover:border-indigo-500"
+            >
+              3
+            </button>
+            <div class="flex flex-col">
+              <div class="bobo md:visible md:text-indigo-50 md:font-thin">
+                <p>STEP 3</p>
+              </div>
+              <div class="bobo md:visible md:font-bold md:text-indigo-50">
+                <p>ADD-ONS</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-row space-x-5">
+            <button id="but4"
+              class="row-span-2 border-2 text-indigo-900 border-white rounded-[50%] py-2 px-4 hover:bg-indigo-500 hover:border-indigo-500"
+            >
+              4
+            </button>
+            <div class="flex flex-col">
+              <div class="bobo md:visible md:text-indigo-50 md:font-thin">
+                <p>STEP 4</p>
+              </div>
+              <div class="bobo md:visible md:font-bold md:text-indigo-50">
+                <p>SUMMARY</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- the text section -->
+      <section >
+        <!-- first tag -->
+        <div id="firstsection" class=" flex flex-col space-y-10  absolute top-[6.5em]   md:absolute md:top-[-0em] ">
+          <div class="flex flex-col p-5 space-y-5  mx-2 bg-white rounded-xl w-[95vw]   md:w-[70vw] md:bg-transparent md:pt-16 md:pl-24 md:mx-0">
+            <h1 class="font-extrabold text-2xl text-indigo-900">Personal info</h1>
+            <p class="text-base text-indigo-900 font-sans">Please provide your name, email address, and phone number</p>
+            <form>
+              <label for="fname" class="font-bold text-indigo-900">Name</label><br>
+              <input type="text" id="fname" name="fname" placeholder="e.g Stephen King" class="mb-5 rounded-md ring ring-gray-400 focus:ring-1 focus:ring-indigo-900 py-2 px-5"><br>
+              <label for="email"class="font-bold text-indigo-900">Last name:</label><br>
+              <input type="email" id="email" name="email" placeholder="e.g stephenking@gmail.com" class="mb-5 rounded-md ring ring-gray-400 focus:ring-1 focus:ring-indigo-900 py-2 px-5"><br>
+              <label for="number" class="font-bold text-indigo-900">Last name:</label><br>
+              <input type="tel" id="number" name="number" placeholder="e.g +1234567777" class="ring rounded-md ring-gray-400 focus:ring-1 focus:ring-indigo-900 py-2 px-5">
+            </form>
+          </div>
+          <!-- next button  -->
+          <div class=" fixed left-0 bottom-0 right-0 bg-white p-2">
+            <button id="firstnext" class=" bg-indigo-900 text-white rounded-md py-3 px-4 float-right md:hidden">Next Step</button>
+          </div>
+        </div>
+        <div>
+          <!-- second tag -->
+          <div id="secondsection" class=" firsttag flex flex-col space-y-10  absolute top-[6.5em]   md:absolute md:top-[-0em] ">
+            <div class="flex flex-col p-5 space-y-5  mx-2 bg-white rounded-xl w-[95vw]   md:w-[70vw] md:bg-transparent md:pt-16 md:pl-24 md:mx-0">
+              <h1 class="font-extrabold text-2xl text-indigo-900">Select your plan</h1>
+              <p class="text-base text-indigo-900 font-sans">You have the option of monthly or yearly billing</p>
+              <!-- billing section  -->
+              <button id="pricingbtn1" class="flex rounded-lg flex-row space-x-3 p-3 border md:mr-16 border-gray-400 hover:border-indigo-800">
+                <i class="fa-solid fa-gamepad pt-5 fa-2xl" style="color: #e47f21;"></i>
+                <div class="flex flex-col ">
+                  <p id="arcade" class="font-extrabold  text-indigo-900">Arcade</p>
+                  <p id="fullprice" class="text-indigo-900"><span>$</span><span class="od">9</span><span id="abbv">/mo</span></p>
+                </div>
+              </button>
+              <button id="pricingbtn2" class="flex rounded-lg flex-row space-x-3 p-3 border md:mr-16 border-gray-400 hover:border-indigo-800">
+                <i class="fa-solid fa-gamepad pt-5 fa-2xl" style="color: #85f0d9;"></i>
+                <div class="flex flex-col justify-start ">
+                  <p id="advance" class="font-extrabold  text-indigo-900">Advanced</p>
+                  <p id="fullprice1"  class="text-indigo-900"><span>$</span><span class="od1">12</span><span id="abbv1">/mo</span</p>
+                </div>
+              </button>
+              <button id="pricingbtn3" class="flex rounded-lg flex-row space-x-3 p-3 border md:mr-16 border-gray-400 hover:border-indigo-800">
+                <i class="fa-solid fa-gamepad pt-5 fa-2xl" style="color: #fcb7c3;"></i>
+                <div class="flex flex-col ">
+                  <p id="pro" class="font-extrabold  text-indigo-900">Pro</p>
+                  <p id="fullprice2" class="text-indigo-900"><span>$</span><span class="od2">15</span><span id="abbv2">/mo</span</p>
+                </div>
+              </button>
+              <div class="flex flex-row justify-center space-x-5">
+                <p class="month font-bold ">monthly</p>
+                <div class="container1">
+                  <div class="toggle-btn">
+                      <div class="inner-circle "></div>
+                  </div>
+              </div>
+                <p class="year font-bold ">yearly</p>
+              </div>
+            </div>
+            <!-- next button  -->
+            <div class="fixed left-0 bottom-0 right-0 bg-white p-2">
+              <button id="firstback" class="text-indigo-300 rounded-md py-3 px-4  md:hidden">Go back</button>
+              <button id="secondnext" class="bg-indigo-900 text-white rounded-md py-3 px-4 float-right md:hidden">Next Step</button>
+            </div>
+        </div>
+        <!-- third tag -->
+        <div id="thirdsection"  class=" firsttag flex flex-col space-y-16  absolute top-[6.5em]   md:absolute md:top-[-0em] ">
+          <div class="flex flex-col p-5 space-y-5  mx-2 bg-white rounded-xl w-[95vw]   md:w-[70vw] md:bg-transparent md:pt-16 md:pl-24 md:mx-0">
+            <h1 class="font-extrabold text-2xl text-indigo-900">Pick add-ons</h1>
+            <p class="text-base text-indigo-900 font-sans">Add-ons helps enhance your gaming experience</p>
+            <!-- billing section  -->
+            <button id="check" class="flex rounded-lg justify-between flex-row space-x-3 p-3 border md:mr-16 border-gray-400 hover:border-indigo-800">
+              <input type="checkbox" name="online" id="online">
+              <div class="flex flex-col ">
+                <label id="textonline" for="online" class="font-extrabold  text-indigo-900">Online Service</label>
+                <p class="text-indigo-900 text-xs">Access to multiplayer games</p>
+              </div>
+              <p id="advprice1" class="text-indigo-900"><span>+$</span><span id="gogo">1</span><span id="abb">/mo</span></p>
+            </button>
+            <button id="check1" class="flex justify-between rounded-lg flex-row space-x-3 p-3 border md:mr-16 border-gray-400 hover:border-indigo-800">
+              <input type="checkbox" name="large" id="large">
+              <div class="flex flex-col ">
+                <label id="textonline1" for="Large" class="font-extrabold  text-indigo-900">Large storage</label>
+                <p class="text-indigo-900 text-xs">Extra 1TB of cloud save</p>
+              </div>
+              <p id="advprice2" class="text-indigo-900 "><span>+$</span><span id="gogo1">2</span><span id="abb1">/mo</span></p>
+            </button>
+            <button id="check2" class="flex justify-between rounded-lg flex-row space-x-3 p-3 border md:mr-16 border-gray-400 hover:border-indigo-800">
+              <input type="checkbox" name="Customizable" id="Customizable">
+              <div class="flex flex-col ">
+                <label id="textonline2" for="Customizable" class="font-extrabold  text-indigo-900">Customizable profile</label>
+                <p class="text-indigo-900 text-xs">custom theme on your profile</p>
+              </div>
+              <p id="advprice3" class="text-indigo-900"><span>+$</span><span id="gogo2">2</span><span id="abb2">/mo</span></p>
+            </button>
+          </div>
+          <!-- next button  -->
+          <div class=" fixed left-0 bottom-0 right-0 bg-white p-2">
+            <button id="secondback" class="text-indigo-300 rounded-md py-3 px-4  md:hidden">Go back</button>
+            <button id="thirdnext" class="bg-indigo-900 text-white rounded-md py-3 px-4 float-right md:hidden">Next Step</button>
+          </div>
+        </div>
+        <!-- fourth tag -->
+        <div id="fourthsection" class=" firsttag flex flex-col  space-y-16  absolute top-[6.5em]   md:absolute md:top-[-0em] ">
+          <div class="flex flex-col p-5 space-y-5  mx-2 bg-white rounded-xl w-[95vw]   md:w-[70vw] md:bg-transparent md:pt-16 md:pl-24 md:mx-0">
+            <h1 class="font-extrabold text-2xl text-indigo-900">Finishing up</h1>
+            <p class="text-base text-indigo-900 font-sans">Double-check everything looks ok before confirming </p>
+            <!-- billing section  -->
+            <div class="flex flex-col">
+              <div class="flex justify-between flex-row text-base text-indigo-900 font-sans">
+                <div class="flex flex-col">
+                  <p id="result" class="font-bold text-indigo-900 font-sans"></p>
+                  <button id="change" class="font-thin text-indigo-900">Change</button>
+                </div>
+                <p  class="text-indigo-900"><span>$</span><span id="rprice"></span></p>
+              </div>
+              <div class="flex justify-between flex-row text-base text-indigo-900 font-sans">
+                <p id="result1" class=" text-indigo-900 font-sans"></p>
+                <p  class="text-indigo-900"><span>$</span><span id="rprice1"></span></p>
+              </div>
+              <div class="flex justify-between flex-row text-base text-indigo-900 font-sans">
+                <p id="result2" class=" text-indigo-900 font-sans"></p>
+                <p  class="text-indigo-900"><span>$</span><span id="rprice2"></span></p>
+              </div>
+              <div class="flex justify-between flex-row text-base text-indigo-900 font-sans">
+                <p id="result3" class=" text-indigo-900 font-sans"></p>
+                <p  class="text-indigo-900"><span>$</span><span id="rprice3"></span></p>
+              </div>
+              <div class=" mt-20 flex justify-between flex-row text-base text-indigo-900 font-sans">
+                <button id="result4" class=" text-indigo-900 font-sans">Total (per month)</button>
+                <p  class="text-indigo-900"><span>$</span><span id="total"></span></p>
+              </div>
+            </div>
+          </div>
+          <!-- next button  -->
+          <div class=" fixed left-0 bottom-0 right-0 bg-white p-2">
+            <button id="thirdback" class="text-indigo-300 rounded-md py-3 px-4  ">Go back</button>
+            <button class="bg-indigo-900 text-white rounded-md py-3 px-4 float-right md:hidden">Confirm</button>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script src="portfolio.js"></script>
+  </body>
+</html>
+<!-- <div class="popup" onclick="myFunction()">Click me to toggle the popup!
+  <span class="popuptext" id="myPopup">A Simple Popup!</span>
+</div> -->
