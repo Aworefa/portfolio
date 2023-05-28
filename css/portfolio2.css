@@ -1,0 +1,38 @@
+.firsttag {
+    visibility: hidden;
+  }
+  
+  
+  @media (max-width: 428px) {
+    .bobo {
+      display: none;
+    }
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .toggle-btn {
+    width: 40px;
+    height: 25px;
+    background-color: gray;
+    border-radius: 15px;
+    padding: 5px;
+    transition: all .3s ease-in-out;
+  }
+  .toggle-btn > .inner-circle {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 300ms ease-in-out;
+  }
+  .toggle-btn.active {
+    background-color: #aa2bf3;
+  }
+  .toggle-btn.active > .inner-circle {
+    margin-left: 17px;
+  }
+  
