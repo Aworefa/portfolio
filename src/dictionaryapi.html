@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio works</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/dictionaryapi.css" />
+  </head>
+  <body class="dark:bg-black dark:text-white">
+    <main class="grid pl-3  md:px-[25%] py-5 md:py-10">
+      <!-- first section with logo and mode -->
+      <section class="flex flex-row  md:w-[50vw] md:justify-between ">
+        <div id="logo">
+          <i class="fa-solid  fa-book fa-beat-fade fa-lg"></i>
+        </div>
+        <div id="modesection " class="flex flex-row ml-[50%] md:space-x-5">
+          <form action="/action_page.php" >
+            <select name="text" id="text" class="bg-transparent p-2 hover:dark:bg-gray-500  dark:text-white">
+              <option value="Serif" > Serif</p></option>
+              <option value="mono">Mono</option>
+              <option value="sans">Sans</option>
+            </select>
+          </form>
+          <!-- toggle bar -->
+          <div class="toggle-btn">
+            <div class="inner-circle"></div>
+          </div>
+          <i class="fa-regular fa-moon fa-xl p-3"></i>
+        </div>
+      </section>
+      <!-- search bar section -->
+      <section id="box" class="flex flex-row bg-slate-300 pr-5 w-[92vw] md:w-[50vw] justify-between rounded-lg h-8 ">
+        <div >
+          <input class="bg-inherit w-[25vw]" type="text" name="find" id="nametofind">
+          </label>
+          
+        </div>
+        <i class="fa-solid fa-magnifying-glass fa-lg pt-3"></i>
+      </section>
+      <!-- the word searched  -->
+      <section class="flex flex-row justify-between pr-7 mt-5">
+        <p id="word" class="text-3xl font-serif font-bold"> </p>
+        <button><i class="fa-solid fa-play  text-indigo-900  p-5 bg-indigo-500 rounded-full"></i></button>
+      </section>
+      <!-- section of oral english -->
+      <section class="text-indigo-900 font-serif font-semibold">
+        <p id="oral"> </p>
+      </section>
+      <!-- sentence -->
+      <section>
+        <p id="type" class="font-bold text-xl"> </p>
+        <p id="meaning" class="pt-9">Meaning</p>
+      </section>
+      <!-- section of translation -->
+      <section id="setofmeaning">
+
+      </section>
+      <section>6</section>
+      <section>6</section>
+      <section>6</section>
+      <section>6</section>
+      <section>6</section>
+    </main>
+  </body>
+  <script src="dictionapi.js"></script>
+</html>
