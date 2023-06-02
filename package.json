@@ -18,5 +18,8 @@
   "homepage": "https://github.com/Aworefa/portfolio#readme",
   "devDependencies": {
     "tailwindcss": "^3.1.7"
+  },
+  "dependencies": {
+    "caniuse-lite": "^1.0.30001492"
   }
 }
