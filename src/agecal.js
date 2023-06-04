@@ -50,6 +50,7 @@ document.getElementById("doas").addEventListener("click", () => {
     document.querySelector(".agedays").innerHTML = disday - days;
   }
 });
+
 document.querySelector("#clear").addEventListener("click", () => {
   // document.querySelector('#clear').classList.add("fa-spin");
   location.reload();
