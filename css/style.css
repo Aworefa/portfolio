@@ -1,0 +1,34 @@
+#line1{
+  -webkit-animation: logging running infinite forwards linear 5s ; ;
+  animation: logging running infinite forwards linear 5s ;
+  
+}
+#line2{
+  animation: logging running infinite forwards linear 5s ;
+}
+#line3{
+  animation: logging running infinite forwards linear 5s ;
+  
+}
+#line4 {
+  animation: logging running infinite forwards linear 5s ;
+}
+@keyframes logging {
+  from{
+   background-color: white;
+  } 
+  to{
+   background-color: black;
+  }
+}
+#logo{
+  animation: logo 5s 1   both running ;
+}
+@keyframes logo {
+  from{ transform: scale(0.2) ;
+
+  }
+  to{
+    transform: scale(1)
+  }
+}
