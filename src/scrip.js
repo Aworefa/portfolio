@@ -15,7 +15,11 @@ document.querySelector('#menu').addEventListener('click', () =>{
     btn.classList.remove('open')
 })
 var typing=new Typed(".info", {
+<<<<<<< HEAD
     strings: ["Frontend web developer", "3d Modeler", "Industrial Designer", "Web Developer"],
+=======
+    strings: ["Frontend web developer","3d Modeler","Industrial Designer","Web Developer"],
+>>>>>>> gh-pages
     typeSpeed: 100,
     backSpeed: 40,
     loop: true,
