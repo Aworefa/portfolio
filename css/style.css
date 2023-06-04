@@ -1,0 +1,114 @@
+#line1{
+  -webkit-animation: logging running infinite forwards linear 5s ; ;
+  animation: logging running infinite forwards linear 5s ;
+  
+}
+#line2{
+  animation: logging running infinite forwards linear 5s ;
+}
+#line3{
+  animation: logging running infinite forwards linear 5s ;
+  
+}
+#line4 {
+  animation: logging running infinite forwards linear 5s ;
+}
+@keyframes logging {
+  from{
+   background-color: white;
+  } 
+  to{
+   background-color: black;
+  }
+}
+#logo{
+  animation: logo 5s 1   both running ;
+}
+@keyframes logo {
+  from{ transform: scale(0.2) ;
+
+  }
+  to{
+    transform: scale(1)
+  }
+}
+#bar {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+
+}
+
+#bars1,
+#bars2,
+#bars3 {
+    transform: rotate(0);
+  transition: all 0.5s;
+}
+
+/* #bars2 {
+  transform: translateY(7px);
+}
+
+#bar3 {
+  transform: translateY(14px);
+} */
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-buttom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: white;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-buttom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-buttom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+#menu{
+  animation: side 0.5s forwards 1 linear;
+}
+@keyframes side {
+  from{
+    transform: translateX(-100%);
+  }to{
+    transform: translateX();
+  }
+}

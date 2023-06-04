@@ -99,17 +99,16 @@
     letter-spacing: 4px
   } */
   
-  a:hover {
-    background: #50E3C2;
-    color: #fff;
+  .nav:hover {
+    background-color: #353a39;
     border-radius: 5px;
-    box-shadow: 0 0 5px #50E3C2,
-                0 0 25px #50E3C2,
-                0 0 50px #50E3C2,
-                0 0 100px #50E3C2;
+    box-shadow: 0 0 5px #353a39,
+                0 0 25px #353a39,
+                0 0 50px #353a39,
+                0 0 100px #353a39;
   }
   
-  a span {
+  /* a span {
     position: absolute;
     display: block;
   }
@@ -121,7 +120,7 @@
     height: 2px;
     background: linear-gradient(90deg, transparent, #50E3C2);
     animation: btn-anim1 1s linear infinite;
-  }
+  } */
   
   @keyframes btn-anim1 {
     0% {
