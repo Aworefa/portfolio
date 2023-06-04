@@ -103,13 +103,10 @@
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 #menu{
-<<<<<<< HEAD
-=======
   position: absolute;
   top: 10%;
   width: 100vw;
   /* right: -100%; */
->>>>>>> gh-pages
   animation: side 0.5s forwards 1 linear;
 }
 @keyframes side {
