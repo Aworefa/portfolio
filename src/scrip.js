@@ -1,7 +1,7 @@
-// setTimeout(() => {
-//   document.querySelector(".loading").classList.add('hidden')
-//   document.querySelector(".body").classList.remove('hidden')
-// }, 5000);
+setTimeout(() => {
+  document.querySelector(".loading").classList.add('hidden')
+  document.querySelector(".body").classList.remove('hidden')
+}, 5000);
 
 var btn= document.getElementById('bar');
 var nav= document.getElementById('menu');
