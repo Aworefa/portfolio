@@ -5,6 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .wrapper {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.typing-demo {
+    width: 12ch;
+    animation: typing 2s steps(12), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 3rem;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+    </style>
 </head>
 <body>
     <audio src=""></audio>
@@ -13,5 +42,10 @@
         <source src="horse.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
+      <div class="wrapper">
+        <h1 class="typing-demo">
+          Dawn Script
+        </h1>
+      </div>
 </body>
 </html>
