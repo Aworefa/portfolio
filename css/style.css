@@ -1,4 +1,4 @@
-#line1{
+/* #line1{
   -webkit-animation: logging running infinite forwards linear 5s ; ;
   animation: logging running infinite forwards linear 5s ;
   
@@ -20,16 +20,61 @@
   to{
    background-color: black;
   }
+} */
+*{
+  padding: 0;
+}
+.loading{
+  background-image: linear-gradient(
+  320deg,
+  hsl(214, 17%, 8%) 0%,
+  hsl(217, 19%, 14%) 29%,
+  hsl(212deg 14% 21%) 44%,
+  hsl(210deg 13% 25%) 54%,
+  hsl(208deg 13% 30%) 61%,
+  hsl(206deg 13% 35%) 68%,
+  hsl(205deg 12% 40%) 74%,
+  hsl(203deg 12% 45%) 80%,
+  hsl(202deg 12% 50%) 88%,
+  hsl(200deg 14% 55%) 100%
+);
+}
+.mainlo{
+  animation: logo2 6s 3 linear  forwards running ;
+}
+.over{
+  border: solid whitesmoke;
+  border-top: solid #57707A ;
+  border-bottom: solid #57707A ;
+  animation: logo 6s 3 linear  forwards running ;
 }
 #logo{
-  animation: logo 5s 1   both running ;
+  border: solid whitesmoke;
+  border-left: solid #57707A ;
+  border-right: solid #57707A ;
+
+  animation: logo 6s 3 linear  forwards running ;
 }
 @keyframes logo {
-  from{ transform: scale(0.2) ;
+  from{ transform: rotate(360deg) ;
 
   }
+  50%{
+    transform:rotate(-360deg) ;
+  }
   to{
-    transform: scale(1)
+    transform: rotate(360deg)
+  }
+}
+@keyframes logo2 {
+  from{ color: white ;
+
+  }
+  50%{
+    color: #57707A ;
+  }
+  to{
+    color: white;
   }
 }
 #bar {
@@ -40,22 +85,6 @@
   position: relative;
 
 }
-
-#bars1,
-#bars2,
-#bars3 {
-    transform: rotate(0);
-  transition: all 0.5s;
-}
-
-/* #bars2 {
-  transform: translateY(7px);
-}
-
-#bar3 {
-  transform: translateY(14px);
-} */
-
 .hamburger {
   cursor: pointer;
   width: 24px;
@@ -103,8 +132,10 @@
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 #menu{
-  position: absolute;
-  top: 10%;
+  position: fixed;
+  top: 5%;
+  left: 0;
+  right: 0;
   width: 100vw;
   /* right: -100%; */
   animation: side 0.5s forwards 1 linear;
@@ -114,5 +145,94 @@
     transform: translateX(-100%);
   }to{
     transform: translateX();
+  }
+}
+#myimg,#myimg:hover{
+  border-radius: 76% 24% 42% 58% / 60% 79% 21% 40% ;
+  filter: grayscale(33);
+  animation: rise 3s 1 forwards ease-in;
+}
+@keyframes rise {
+  from{
+    transform: scale(0.2);
+    filter: grayscale(33);
+    
+  }50%{
+    transform: scale(0.5);
+    filter: none;
+  }
+  to{
+    transform: scale(1);
+    filter: grayscale(33);
+  }
+}
+.down:hover{
+  background:#57707a ;
+  color: #c5bac4;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #57707a, 0 0 25px #57707a, 0 0 50px #57707a,
+    0 0 100px #57707a;
+}
+a:hover {
+  background: #c5bac4;
+  color: #05060a;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #c5bac4, 0 0 25px #c5bac4, 0 0 50px #c5bac4,
+    0 0 100px #c5bac4;
+}
+/* #about:hover{
+  animation: aboutslide 2s 1 normal linear both ;
+}
+@keyframes aboutslide {
+  from{
+    width: 0px;
+  }to{
+    width: 100%;
+  } 
+ }  */
+ #view {
+  background: linear-gradient(
+    to right,
+    #191d23 0%,
+    #191d23 85%,
+    #c5bac4 85%,
+    #c5bac4 100%
+  );
+}
+#view1 {
+  background: linear-gradient(
+    to right,
+    #191d23 0%,
+    #191d23 80%,
+    #c5bac4 80%,
+    #c5bac4 100%
+  );
+}
+#view2 {
+  background: linear-gradient(
+    to right,
+    #191d23 0%,
+    #191d23 75%,
+    #c5bac4 75%,
+    #c5bac4 100%
+  );
+}
+#view3 {
+  background: linear-gradient(
+    to right,
+    #191d23 0%,
+    #191d23 70%,
+    #c5bac4 70%,
+    #c5bac4 100%
+  );
+}
+#works:hover{
+  animation: fadein 5s 1 forwards ;
+}
+@keyframes fadein {
+  from{
+    opacity: 0;
+  }to{
+    opacity:1;
   }
 }

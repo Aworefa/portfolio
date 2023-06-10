@@ -7,14 +7,14 @@ body{
     background-color: gray;
     border-radius: 15px;
     padding: 5px;
-    transition: all .3s ease-in-out;
+    
   }
   .toggle-btn > .inner-circle {
     width: 15px;
     height: 15px;
     background-color: #fff;
     border-radius: 50%;
-    transition: all 300ms ease-in-out;
+    
   }
   .toggle-btn.active {
     background-color: #aa2bf3;
