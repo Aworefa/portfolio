@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin-inline: 0;
+            margin-bottom: 0;
+        }
+
+        body {
+            /* background-image: url("../portfolio/rimages/sunning.jpg"); */
+            background-size: cover;
+            font-family: monospace;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            position: fixed;
+            top: 0;
+            z-index: 2;
+            width: 100%;
+            padding-block: 5px;
+            background-color: rgba(255, 255, 255, 0.795);
+        }
+
+        #logo {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            font-size: large;
+        }
+
+        li {
+            text-decoration: underline;
+            color: rgb(63, 62, 62);
+            cursor: pointer;
+        }
+
+        .primary {
+            position: absolute;
+            top: 5%;
+            left: 30%;
+            text-align: center;
+            font: bold 7vw Arial;
+            color: rgb(63, 62, 62);
+            z-index: -1;
+        }
+
+        .mountain1 {
+            width: 100%;
+            height: 73vh;
+            margin-top: 27vh;
+        }
+
+        .square {
+            width: 20px;
+            height: 20px;
+            background-color: rgb(63, 62, 62);
+        }
+
+        .numbering {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+        }
+        #numbertwo {
+            background-color: white;
+
+        }
+        
+        .numbering>p:nth-child(1) {
+            color: rgba(43, 45, 53, 0.637);
+            font: bold 6vw Arial;
+            margin: 0;
+        }
+
+        .text {
+            font: 1.1rem Arial;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .section2 {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: url("rimages/secondmountain.JPG");
+            background-size: cover;
+            position: absolute;
+            top: 0%;
+            padding: 5%;
+        }
+        .firstInfo{
+            padding-inline: 20%;
+        }
+
+        .slideshow-container {
+            margin-top: 30px;
+            padding-block: 10px;
+            text-align: center;
+            background-color: rgba(43, 45, 53, 0.637);
+            
+        }
+        .mySlides {
+            display: none
+        }
+
+        #img{
+            width: 30vw;
+            aspect-ratio: 16/9;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+        .section3{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            background: no-repeat url('./rimages/icemountain.jpg');
+            background-size: cover;
+            padding-top: 5vh;
+        }
+        .sectionTwop{
+            color: rgb(43, 45, 53);
+            font-size:1rem;
+            margin-left: 10%;
+        }
+        #mountainCell{
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(63, 62, 62) ;
+            margin-top: 30px;
+            
+            padding-inline: 20%;
+        }
+        #mountainCell>p{
+            margin-top: 0;
+            padding: 15px;
+            color: white ;
+        }
+        #mountainCell>p:hover{
+            background-color: white;
+            text-decoration: underline;
+            color: rgb(63, 62, 62);
+        }
+        #schedule{
+            margin-top: 40px;
+            background-color: rgba(255, 255, 255, 0.767);
+            padding: 20px;
+            margin-inline: 20%;
+            width: 300px;
+        }
+        .visitingDate{
+            display: flex;
+            justify-content: space-between;
+        }
+        footer{
+            display: flex;
+            justify-content: space-between;
+            padding-inline: 20%;
+            background-color: rgb(63, 62, 62);
+            color: white;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            z-index: 2;
+            width: 100%;
+        }
+        footer>div{
+            display: inline-flex;
+            gap: 15px;
+        }
+        footer>div>img{
+            margin-top: 10px;
+        }
+
+        @media (max-width: 840px) {
+            .primary {
+                position: absolute;
+                top: 15%;
+                left: 30%;
+                text-align: center;
+                font: bold 7vw Arial;
+            }
+
+            .numbering {
+                display: flex;
+                flex-direction: row;
+                /* align-items: baseline; */
+            }
+
+            .numbering>p:nth-child(1) {
+                color: rgb(63, 62, 62);
+                font: bold 10vw Arial;
+                margin-top: 0px;
+            }
+
+            .text {
+                font: 0.9rem Arial;
+            }
+
+            .square {
+                width: 5px;
+                height: 5px;
+                background-color: rgb(63, 62, 62);
+            }
+            .section2 {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: url("rimages/secondmountain.JPG");
+            background-size: cover;
+            position: absolute;
+            top: 0%;
+            }
+            .firstInfo{
+                padding-inline: 5%;
+            }
+            #mountainCell{
+                padding-inline: 5%;
+            }
+            .slideshow-container {
+            width: 100%;
+            margin-top: 30vh;
+            padding-block: 10px;
+                text-align: center;
+                background-color: rgba(43, 45, 53, 0.637);;
+            }
+            #schedule{
+                margin-top: 40px;
+                background-color: rgba(255, 255, 255, 0.767);
+                padding: 20px;
+                margin-inline: 5%;
+                width: 300px;
+            }
+            footer{
+                display: flex;
+                justify-content: space-between;
+                padding-inline: 5%;
+                background-color: rgb(63, 62, 62);
+                color: white;
+                align-items: center;
+                position: fixed;
+                bottom: 0;
+                z-index: 2;
+                width: 100%;
+                font-size: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img id="logo" src="./rimages/IMG_1663.JPG" alt="logo" />
+        <ul>
+            <li id="historyButton">01.HISTORY</li>
+            <li id="teamButton" >02.TEAM</li>
+        </ul>
+    </nav>
+    <!-- section 1  -->
+    <section id="section1">
+        <h1 class="primary">LOSANGELES <br />MOUNTAINS</h1>
+        <img src="../portfolio/rimages/mountain1.png" alt="mountain" class="mountain1" />
+    </section>
+    <section id="section2" class="hide">
+        <div class="firstInfo">
+            <div class="numbering">
+                <p>01</p>
+                <div>
+                    <p class="text">HISTORY</p>
+                    <div class="square"></div>
+                </div>
+            </div>
+            <p id="info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+                deserunt dolores pariatur, sit earum voluptas nostrum consequatur
+                tenetur quas molestias rem harum, autem adipisci ipsum atque repellat
+                exercitationem consectetur eaque. Amet perspiciatis voluptate magni
+                ipsam consequuntur, aliquam tenetur. Eos fugiat voluptatum dolorem
+                eveniet! Facilis aspernatur placeat odio unde ea iste laudantium, dolor
+                cumque dignissimos!
+            </p>
+        </div>
+        <!-- carousel part -->
+        <div class="slideshow-container">
+            <div class="mySlides ">
+                <img  id="img" src="./rimages/mountain1.png" >
+            </div>
+
+            <div class="mySlides ">
+                <img  id="img" src="./rimages/secondmountain.JPG" >
+            </div>
+
+            <div class="mySlides ">
+                <img  id="img" src="./rimages/mountain1.png" >
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+             
+    </section>
+    <!-- third section -->
+    <section class="hide" id="section3">
+        <div id="numbertwo" class="firstInfo">
+            <div  class="numbering">
+                <p>02</p>
+                <div>
+                    <p class="text">CLIMB</p>
+                    <div class="square"></div>
+                </div>
+                <p class="sectionTwop">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt assumenda molestiae at quibusdam nulla illo totam quaerat! Soluta, harum nostrum.</p></div>
+        </div>  
+        <div id="mountainCell">
+            <p>MOUNTAIN 1</p>
+            <p>MOUNTAIN 2</p>
+        </div>  
+        <div id="schedule">
+            <h2>SCHEDULE</h2>
+            <p class="visitingDate">25 Nov 2016    <span>Lorem, ipsum dolor.</span></p>
+            <p class="visitingDate">5 Nov 2016     <span>Lorem, ipsum dolor.</span></p>
+            <p class="visitingDate">16 Nov 2016    <span>Lorem, ipsum dolor.</span></p>
+            <p class="visitingDate">25 Nov 2016    <span>Lorem, ipsum dolor.</span></p>
+        </div>     
+    </section>
+    <footer>
+        <div>
+            <img id="logo" src="./rimages/IMG_1663.JPG" alt="logo">
+            <h2>LOSANGELES <br> MOUNTAIN</h2>
+        </div>
+        <p>COPYRIGHT 2016. ALL RIGHT RESERVED</p>
+    </footer>
+</body>
+<script>
+    const history = document.getElementById("historyButton");
+    const team = document.getElementById("teamButton");
+    const section1 = document.getElementById("section1");
+    const section2 = document.getElementById("section2");
+    const section3 = document.getElementById("section3");
+    const logo = document.getElementById("logo");
+    history.addEventListener("click", () => {
+        section1.classList.add("hide");
+        section2.classList.remove("hide");
+        section2.classList.add("section2");
+        section3.classList.add("hide");
+        section3.classList.add("section3");
+    });
+    logo.addEventListener("click", () => {
+        section1.classList.remove("hide");
+        section2.classList.add("hide");
+        section2.classList.remove("section2");
+        section3.classList.add("hide");
+    });
+    team.addEventListener("click", () => {
+        section1.classList.add("hide");
+        section2.classList.add("hide");
+        section2.classList.remove("section2");
+        section3.classList.remove("hide");
+        section3.classList.add("section3");
+    });
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</html>
