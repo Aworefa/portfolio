@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWOREFA TOBI</title>
+  <link rel="stylesheet" href="../dist/output.css" />
+  <link rel="stylesheet" href="../css/all.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+    integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+    crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-cover bg-[#c5bac4]">
+  <!-- loading section  -->
+  <div class="loading  w-[100vw] h-[100vh]">
+    <section class="absolute top-[40%] left-[30vw] md:left-[45vw]">
+      <div class="over w-[150px] h-[150px] p-2 rounded-full">
+        <div id="logo" class="w-full h-full rounded-[50%]"></div>
+      </div>
+      <p class="mainlo z-20 absolute top-[30%] left-6 mainlogo font-[sofia] text-6xl text-white">
+        AT
+      </p>
+    </section>
+  </div>
+  <div class="body hidden">
+    <nav
+      class="sticky z-10 top-0 left-0 right-0 bg-[#05060a] font-mono text-white font-bold flex py-3 px-6 flex-row justify-between">
+      <p class="font-[sofia] text-2xl">
+        <button href="index.html">AT</button>
+      </p>
+      <ul class="hidden lg:flex lg:flex-row space-x-20">
+        <a href="#home" class="nav hover:bg-[#C5BAC4] px-4">
+          <li>HOME</li>
+        </a>
+        <a href="#about" class="nav hover:bg-[#C5BAC4] px-4">
+          <li>ABOUT</li>
+        </a>
+        <a href="#skills" class="nav hover:bg-[#C5BAC4] px-4">
+          <li>SKILLS</li>
+        </a>
+        <a href="#works" class="nav hover:bg-[#C5BAC4] px-4">
+          <li>WORKS</li>
+        </a>
+        <a href="#contact" class="nav hover:bg-[#C5BAC4] px-4">
+          <li>CONTACT</li>
+        </a>
+      </ul>
+      <button id="bar" class="flex flex-col w-10 h-6 lg:hidden">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-buttom"></span>
+      </button>
+    </nav>
+    <ul id="menu" class=" lg:hidden mt-1 bg-black/90 hidden place-items-center py-6 content-center space-y-5">
+      <a href="#home" class="nav hover:bg-gray-400 text-white">
+        <li>HOME</li>
+      </a>
+      <a href="#about" class="nav hover:bg-gray-400 text-white">
+        <li>ABOUT</li>
+      </a>
+      <a href="#works" class="nav hover:bg-gray-400 text-white">
+        <li>WORKS</li>
+      </a>
+      <a href="#contact" class="nav hover:bg-gray-400 text-white">
+        <li>CONTACT US</li>
+      </a>
+    </ul>
+    <main id="home" class="flex flex-col lg:flex-row bg-cover w-full py-5 px-10 "
+      style="background-image:url(../images/jjj.jpg);">
+      <div>
+        <div>
+          <p class="text-teal-100 font-semibold text-lg font-mono mb-7">Hi, I'm a </p>
+        </div>
+        <div class="flex flex-row text-3xl  md:text-5xl">
+          <p class="info h-[8vh] font-extrabold  text-slate-100 font-mono "> </p>
+        </div>
+        <div>
+          <p class="font-extrabold text-2xl md:text-5xl text-slate-100 font-mono mt-5">I build things for the web.</p>
+        </div>
+        <div>
+          <p class="text-slate-100 text-[17px] w-full font-mono md:w-[500px] mb-10">I am a frontend developer who
+            is passionate about building responsive and user-friendly websites. </p>
+        </div>
+        <div>
+          <a href="../images/resume.pdf" download class="p-5 down rounded-lg font-mono border border-[#57707A] font-bold">
+            DOWNLOAD RESUME</a>
+        </div>
+      </div>
+      <div>
+        <img id="myimg" class="mt-10" src="../images/seeto.jpg" alt="my image" />
+      </div>
+
+    </main>
+    <!-- about me section -->
+    <section id="about" class="bg-[#404e81] mt-5 px-4 pt-5 md:px-10 md:pt-10">
+      <div class="flex flex-col md:flex-row space-x-16 space-y-10">
+        <!-- text zone -->
+        <div class="flex flex-col">
+          <div class="flex flex-row space-x-6 mb-7">
+            <p class="text-[#c5bac4] font-mono text-xl font-extrabold md:text-xl lg:text-3xl">
+              About Me
+            </p>
+            <div class="h-[1px] w-[80vw] self-center bg-[#c5bac4]"></div>
+          </div>
+          <p class="text-[#c5bac4] w-[90vw] font-mono text-lg text-justify pb-8">
+            Welcome to my portfolio website! I'm TOBI, a passionate and
+            dedicated frontend web developer with a strong eye for design and
+            a knack for creating seamless user experiences. With
+            <span id="yearsofexperience"></span> years of experience in the
+            industry, I have honed my skills in HTML, CSS, JavaScript, and
+            various frontend frameworks. I thrive on the challenges of
+            transforming complex ideas into visually appealing and functional
+            websites that leave a lasting impression. My mission is to bring
+            creativity and innovation to every project I undertake. I believe
+            that the frontend is the face of a website, and I strive to make
+            it not only visually stunning but also intuitive and
+            user-friendly. I value collaboration and believe that great
+            results are achieved through effective communication and teamwork.
+            Working closely with designers, UX experts, and backend
+            developers, I thrive in an environment where ideas are shared, and
+            collective efforts lead to outstanding outcomes. I'm looking for a
+            great job opportunity and mentorship that promotes team work and
+            also enable an environment where developers can learn and work
+            with new technologies.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- skills section  -->
+    <section id="skills" class="text-justify pt-[-30px] mt-10 md:mt-40">
+      <div class="flex flex-col">
+        <div class="items-center flex flex-col mb-10">
+          <h2 class="text-[#191d23] text-3xl font-mono font-bold">Skills</h2>
+          <div class="h-[1px] w-[80vw] bg-[#191d23]"></div>
+        </div>
+        <div class="flex flex-col lg:flex-row space-y-10 lg:space-x-20">
+          <p class="px-10 text-[#191d23] font-mono text-lg">
+            I can work as a technical director and team manager. I am a
+            front-end developer with extensive knowledge of HTML, CSS and
+            JavaScript. I am also generally skilled in technologies such as
+            tailwind. I have strong problem-solving abilities and am
+            relentless when it comes to getting to the root of a problem and
+            ultimately solving it. I can handle pressure that is under some
+            specific stressful conditions. I always manage to retain my
+            critical thinking capacity. I also have good understanding of git
+          </p>
+          <div id="bars" class="self-center lg:pr-20 flex fle-col">
+            <ul>
+              <li class="px-32 md:px-36 rounded-full border text-white border-[#191d23] text-center mb-8" id="view">
+                Html
+              </li>
+              <li class="md:px-36 rounded-full border text-white border-[#191d23] text-center my-8" id="view1">
+                Css
+              </li>
+              <li class="md:px-36 rounded-full border text-white border-[#191d23] text-center my-8" id="view2">
+                Tailwindcss
+              </li>
+              <li class="md:px-36 rounded-full border text-white border-[#191d23] text-center my-8" id="view3">
+                JavaScript
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- WORKS section -->
+    <!-- service section  -->
+    <section id="service" class=" mx-10 pt-20 md:pt-0 md:mt-40 mb-40">
+      <div class="flex flex-col  ">
+        <div class="flex flex-row-reverse space-x-6 mb-7">
+          <p class="text-[#191d23] font-mono text-2xl font-extrabold ml-3 md:text-3xl">Works</p>
+          <div class="h-[1px] w-[80vw]  self-center bg-[#191d23]"></div>
+        </div>
+        <div id="works" class="grid grid-cols-1 lg:grid-cols-2  gap-5">
+          <div id="first grid">
+            <a href="passwordmg.html" class="flex flex-col">
+              <img src="../images/password creator.png" alt="password creator">
+              <p class="text-[#191d23] font-mono font-bold text-2xl p-3">PASSWORD CREATOR</p>
+              <p class="text-[#191d23] font-mono font-bold text-xl p-3">html css js </p>
+              <a class="text-[#191d23] hover:bg-[#404e81] hover:text-[#c5bac4] p-3 font-mono font-bold text-xl"
+                href="https://github.com/Aworefa/portfolio/blob/main/src/passwordmg.html">check code</a>
+            </a>
+          </div>
+          <div id="2nd grid">
+            <a href="dictionaryapi.html" class="flex flex-col">
+              <img src="../images/dictionaryapi.png" alt="dictionaryimg">
+              <p class="text-[#191d23] font-mono font-bold text-2xl p-3">DICTIONARY API</p>
+              <p class="text-[#191d23] font-mono font-bold text-xl p-3">html css js api</p>
+              <a class="text-[#191d23] hover:bg-[#404e81] hover:text-[#c5bac4] p-3 font-mono font-bold text-xl"
+                href="https://github.com/Aworefa/portfolio/blob/main/src/dictionaryapi.html">check code</a>
+            </a>
+          </div>
+          <div id="3rd grid">
+            <a href="agecal.html" class="flex flex-col">
+              <img src="../images/agecal.png" alt="agecal">
+              <p class="text-[#191d23] font-mono font-bold text-2xl p-3">AGE CALCULATOR</p>
+              <p class="text-[#191d23] font-mono font-bold text-xl p-3">html css js </p>
+              <a class="text-[#191d23] hover:bg-[#404e81] hover:text-[#c5bac4] p-3 font-mono font-bold text-xl"
+                href="https://github.com/Aworefa/portfolio/blob/main/src/agecal.html">check code</a>
+            </a>
+          </div>
+          <div id="4th grid">
+            <a href="portfolio2.html" class="flex flex-col">
+              <img src="../images/miniform.png" alt="miniform">
+              <p class="text-[#191d23] font-mono font-bold text-2xl p-3">MINIFORM</p>
+              <p class="text-[#191d23] font-mono font-bold text-xl p-3">html css js</p>
+              <a class="text-[#191d23] hover:bg-[#404e81] hover:text-[#c5bac4] p-3 font-mono font-bold text-xl"
+                href="https://github.com/Aworefa/portfolio/blob/main/src/portfolio2.html">check code</a>
+            </a>
+          </div>
+          <div id="5th grid">
+            <a href="landingpage.html" class="flex flex-col">
+              <img src="../images/laptoplanding.png" alt="laptoplanding">
+              <p class="text-[#191d23] font-mono font-bold text-2xl p-3">LANDING PAGE</p>
+              <p class="text-[#191d23] font-mono font-bold text-xl p-3">html css </p>
+              <a class="text-[#191d23] hover:bg-[#404e81] hover:text-[#c5bac4] p-3 font-mono font-bold text-xl"
+                href="https://github.com/Aworefa/portfolio/blob/main/src/landingpage.html">check code</a>
+            </a>
+          </div>
+        </div>
+      </div>
+      </section>
+      <footer id="contact">
+        <div class="flex flex-col  bg-[#404e81] mt-5  pt-5  md:pt-10">
+          <p class="text-center text-[#c5bac4] text-3xl font-mono font-bold">Contact</p>
+          <div class="mx-8 md:mx-20 lg:mx-28 h-[1px] w-[80vw]  bg-[#c5bac4]  mb-10"></div>
+          <div class=" flex flex-row justify-center mt-20 space-x-10">
+            <a href="https://www.linkedin.com/in/aworefa-tobi-6b473223a" id="linkedin"><i
+                class="fa-brands fa-linkedin-in text-[#c5bac4] hover:text-[#05060a] p-2"></i></a>
+            <a href="tel:+2347032771628" id="whatsapp"><i
+                class="fa-brands fa-whatsapp text-[#c5bac4] hover:text-[#05060a] p-2"></i></a>
+            <a href="https://www.twitter.com/aworefae" id="twitter"><i
+                class="fa-brands fa-twitter text-[#c5bac4] hover:text-[#05060a] p-2"></i></a>
+            <a href="https://github.com/Aworefa" id="github"><i
+                class="fa-brands fa-github text-[#c5bac4] hover:text-[#05060a] p-2"></i></a>
+            <a href="mailto:aworefatobi1999@gmail.com" id="gmail"><i
+                class="fa-solid fa-at text-[#c5bac4] hover:text-[#05060a] p-2"></i></a>
+          </div>
+          <div class=" mx-auto container flex justify-center" id="date">
+            <h2 class="text-center font-mono text-slate-300 pt-6 px-2" id="dayname"></h2>
+            <h2 class="text-center font-mono text-slate-300 pt-6 px-2" id="day"></h2>
+            <h2 class="text-center font-mono text-slate-300 pt-6 px-2" id="month"></h2>
+            <h2 class="text-center font-mono text-slate-300 pt-6 px-2" id="year"></h2>
+          </div>
+        </div>
+      </footer>
+  </div>
+</body>
+<script src="scrip.js"></script>
+
+</html>
